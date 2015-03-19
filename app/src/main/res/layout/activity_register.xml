@@ -1,0 +1,148 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main layout -->
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- Body layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/green"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/register"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/login"
+                android:textColor="@color/white"
+                android:id="@+id/register"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/name"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:id="@+id/nameText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/name"
+                android:textColor="@color/white"
+                android:ems="10"
+                android:layout_marginTop="5dp"
+                android:padding="15dp"
+                android:background="@drawable/rectange_edittext1"
+                android:id="@+id/nameEdit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/email"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:id="@+id/emailText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:hint="@string/email"
+                android:background="@drawable/rectange_edittext1"
+                android:layout_marginTop="5dp"
+                android:padding="15dp"
+                android:id="@+id/emailEdit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/password"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:id="@+id/passwordText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:hint="@string/password"
+                android:background="@drawable/rectange_edittext1"
+                android:layout_marginTop="5dp"
+                android:padding="15dp"
+                android:id="@+id/passwordEdit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:id="@+id/confirmPwdText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:hint="@string/confirm"
+                android:background="@drawable/rectange_edittext1"
+                android:layout_marginTop="5dp"
+                android:padding="15dp"
+                android:id="@+id/confirmPwdEdit" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/agree"
+                android:id="@+id/checkBox"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:id="@+id/button"
+                android:textColor="@color/grey"
+                android:layout_marginTop="15dp"
+                android:paddingRight="50dp"
+                android:paddingLeft="50dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:background="@color/silver"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <!-- header bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Nav drawer -->
+
+            <include layout="@layout/navbar" />
+        </LinearLayout>
+    </FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>

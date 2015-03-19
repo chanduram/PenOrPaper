@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">PenOrPaper</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">PenOrPaper</string>
+
+    /****Login Activity***/
+    <string name="login">Login</string>
+    <string name="sign">Sign-in address</string>
+    <string name="hint1">Email address</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember Password</string>
+    <string name="hint2">******</string>
+    <string name="signin">Sign in</string>
+
+    /****Register Activity***/
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="agree">I agree to penorpaper terms &lt; conditions.</string>
+    <string name="signup">Sign up</string>
+
+    /****ChangePassword Activity***/
+    <string name="change_password">Change Password</string>
+    <string name="backButton">Back</string>
+    <string name="continueButton">Continue</string>
+
+    /****MyProfile Activity***/
+    <string name="my_profile">MY PROFILE</string>
+    <string name="first_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="e_mail">E-Mail:</string>
+    <string name="telephone">Telephone:</string>
+    <string name="fax">Fax:</string>
+
+
+</resources>
